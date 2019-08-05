@@ -139,8 +139,13 @@ public class Common{
 		String str=new java.util.Scanner(System.in).nextLine();
 		return str;
 	}
+	public static int rand(int max){
+		Random rand=new Random();
+		return rand.nextInt(max);
+	}
 	public static int rand(int min,int max){
 		Random rand=new Random();
 		return rand.nextInt(max-min+1)+min;
 	}
+
 }
